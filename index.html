@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    
+    <style type="text/css">
+
+      .nav a {
+        color: #5a5a5a;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 14px 10px;
+        text-transform: uppercase;
+      }
+
+      .nav li {
+        color: #5a5a5a;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 14px 10px;
+        text-transform: uppercase;
+      }
+
+      .nav li {
+        display: inline;
+      }
+
+      .jumbotron {
+        background-image:url('https://fvcproductions.files.wordpress.com/2014/10/hedaer-0011.jpg');
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .jumbotron .container {
+        position: relative;
+        top:100px;
+      }
+
+      .jumbotron h1 {
+        color: #fff;
+        font-size: 100px;  
+        font-family: 'Shift', sans-serif;
+        font-weight: bold;
+        display: absolute;
+      }
+
+      .meep h2 {
+        color: #03B08F;
+        font-size: 48px;  
+        font-family: 'Shift', sans-serif;
+        font-weight: bold;
+        display: center;
+        text-align: center;
+      }
+
+      .jumbotron p {
+        font-size: 20px;
+        color: #fff;
+      }
+
+      .learn-more {
+        background-color: #f7f7f7;
+      }
+
+      .learn-more h3 {
+        font-family: 'Shift', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .learn-more a {
+        color: #00b0ff;
+      }
+
+      .neighborhood-guides {
+          background-color: #efefef;
+          border-bottom: 1px solid #dbdbdb;
+      }
+
+      .neighborhood-guides h2 {
+          color: #393c3d;
+          font-size: 24px;
+      }
+
+      .neighborhood-guides p {
+        font-size: 15px;
+        margin-bottom: 13px;
+      }
+
+      .fluid-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+      }
+
+      .fluid-wrapper iframe[seamless] {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .special-p {
+        text-align: center;
+        font-weight:bold;
+      }
+
+      .centering {
+        text-align:center;
+      }
+
+        html{height: 100%}
+        body{height: 100%; margin: 0; padding: 0}
+        #map-canvas{height: 100%}
+    
+.sign-up {
+  position: relative;
+  margin: 50px auto;
+  width: 280px;
+  padding: 33px 25px 29px;
+  background: white;
+  border-bottom: 1px solid #c4c4c4;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+.sign-up:before, .sign-up:after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: inherit;
+  border-bottom: 1px solid #d2d2d2;
+  border-radius: 4px;
+}
+.sign-up:after {
+  bottom: 3px;
+  border-color: #dcdcdc;
+}
+
+.sign-up-title {
+  margin: -25px -25px 25px;
+  padding: 15px 25px;
+  line-height: 35px;
+  font-size: 26px;
+  font-weight: 300;
+  color: #aaa;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+}
+.sign-up-title:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  border-radius: 5px 5px 0 0;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+.cooler li {
+  font-size: 30px;
+  font-family: 'Shift', sans-serif;
+
+}
+
+.smaller p {
+  font-family: 'Shift', sans-serif;
+}
+
+    
+    </style>
+
+    <title>Operation AIR</title>
+
+    <script src = "https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    
+    <script>
+        function initialize(){
+            var mapOptions = {
+                center: new google.maps.LatLng(40,-100),
+                zoom: 4,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+            var myLatLng;
+            var marker;
+            {% for input_marker in markers %}
+            myLatLng = new google.maps.LatLng({{input_marker.latitude}}, {{input_marker.longitude}});
+            marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              title: "{{input_marker.title}}"
+            });
+            {% endfor %}
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+</head>
+<body>
+    <div class="nav">
+      <div class="container">
+        <ul class = "pull-left">
+          <li><a href="http://www.google.com">Google Hackathon 2014</a></li>
+          <li><a href = "/addmarker">Add Marker</a></li>
+          <li><a href ="/getready">Get Ready</a><li>
+        </ul>
+        <ul class = "pull-right">
+          <li><a href = "http://www.hamptonu.edu">Hampton University</a></li>
+        </ul>
+      </div>
+    </div>
+
+     <form class="sign-up-title">
+      </form>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1></h1>
+      </div>
+    </div> 
+    
+    <div class="learn-more">
+      <div class="container">
+        
+        <div class="row">
+         
+          <div class="col-md-4">
+          <div class="centering">
+            <p><img src="http://upload.wikimedia.org/wikipedia/commons/d/d3/Hampton_University_Seal.png" alt="HU" height="250" align="middle"></p>
+            <h3 text-align=center>Members</h3>
+            </div>
+              <ul class ="cooler">
+                <li><a href="http://www.linkedin.com/pub/anisha-carter/86/b10/201">Anisha Carter</a></li>
+                <li><a href="mailto:dominiquecollins@icloud.com">Dominique Collins</a></li>
+                <li><a href="http://facebook.com/BigEswall">Evan Howard</a></li>
+                <li><a href="http://twitter.com/fvcproductions">FVCproductions</a></li>
+                <li><a href="mailto:julian.mathis@my.hamptonu.edu">Julian Mathis</a></li>
+              </ul>
+          </div>
+
+          <div class="col-md-4">
+          <div class="centering">
+            <h3>About AIR</h3>
+          </div>
+         
+            <div class = "special-p">
+            <p font-family: 'Shift', sans-serif font-size: 18px font-weight: bold>AIR: Artificial Intelligence Research</p>
+            </div>
+            <div class = "smaller">
+            <p>This map provides links to educational institutions that offer advanced degrees/concentration/depth/breadth area in artificial intelligence (AI) or operate well established AI laboratories/research groups.</p>
+            <p>This map is separated into categories by graduate, undergraduate, and research groups/labs/institutions.</p>
+            <p>This map also focuses on research efforts related to automated reasoning, knowledge representation, agent systems, cognitive/computational neuroscience, machine learning, AI-related topics, etc.</p>
+            <p>This map does not directly focus on research efforts related to Robotics or engineering in general. Anyone provided with the link is welcome to go ahead and edit the map and contribute more universities or research efforts.</p>
+            <p>We used the <a href="https://developers.google.com/maps/">Google Maps API</a> and used the directory of universities provided by <a href="http://www.aiinternational.org">AI International</a>.</p>
+            </div>
+          </div>
+
+      <div class="col-md-4">
+          <div class="centering">
+            <h3 text-align=center>Original Source</h3>
+          </div>
+
+          <div class="smaller">
+            <p>Check out our Github source files <a href= "http://github.com/fvcproductions/beato-2014">here</a>.</p>
+            <p>Our entire database hosted through <a href="https://www.google.com/work/mapsearth/products/mapsengine.html">Google Maps Engine Lite</a> of universities located globally can be found <a href="https://www.google.com/maps/d/edit?mid=zIblKEWM9BnY.kacxPZLKVHyE">here</a>.</p>
+            <div class="centering">
+            <p><img src="http://icons.iconarchive.com/icons/artcore-illustrations/artcore-4/512/github-icon.png" alt="GitHub" height="300" align="middle"></p>
+            </div>
+          </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+  
+    <div class="meep">
+      <div class="container">
+        <h2>Add a school using link above or clicking <a href = "/addmarker">here</a>.</h2>
+        <h2>And bring on the robot revolution! <img src="http://www.veryicon.com/icon/png/Kids/Alien%20Icons/Robot.png" alt="robot" height="50"></h2>
+      </div>
+    
+    </div> 
+      <div id = "map-canvas">
+    </div>
+
+    <div class="meep">
+      <div class="container">
+        <h2>Thanks for visiting!</h2>
+    </div>
+
+  </body>
+</html>
